@@ -3,15 +3,17 @@
 }
 
 .portfolio__titlebar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
+  @include clearfix();
 }
 
-.portfolio__title {}
+.portfolio__title {
+  float: left;
+}
 
-.portfolio__filter {}
+.portfolio__filter {
+  margin-top: 15px;
+  float: right;
+}
 
 .portfolio__grid {
   @include row-flex();
