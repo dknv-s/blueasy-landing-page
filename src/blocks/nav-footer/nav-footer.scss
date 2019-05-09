@@ -1,0 +1,23 @@
+.nav-footer {
+  font-size: 0;
+}
+
+.nav-footer__item {
+  display: inline-block;
+  padding: 0 14px;
+  border-right: 2px solid #515f67;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.nav-footer__link {
+  display: inline-block;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  color: #515f67;
+  text-transform: uppercase;
+  text-decoration: none;
+}
