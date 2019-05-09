@@ -1,16 +1,15 @@
 .header {
   background-color: #353f46;
   opacity: 0.85;
+  padding: 54px 0;
 }
 
 .header__wrapper {
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include clearfix();
 }
 
 .header__logo {
+  float: left;
   font-size: 30px;
   font-weight: 700;
   color: #ffffff;
@@ -19,4 +18,6 @@
   text-decoration: none;
 }
 
-.header__navbar {}
+.header__navbar {
+  float: right;
+}
