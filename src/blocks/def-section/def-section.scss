@@ -5,6 +5,7 @@
 
 .def-section__wrapper {
   @include row-flex();
+  @include lg(justify-content, center);
   justify-content: space-between;
   align-items: center;
 }
@@ -12,6 +13,7 @@
 .def-section__composition {
   @include col();
   @include size(5);
+  @include size-lg(12);
 }
 
 .def-section__title {}
@@ -35,9 +37,15 @@
 
 .def-section__video-container {
   @include col();
-  @include size(5);
+  @include size(6);
+  @include size-lg(12);
   @include shift-left(1);
-  background-color: #000;
-  width: 560px;
-  height: 313px;
+  @include shift-lg-left(0);
+  @include lg(margin-top, 30px);
+  max-width: 560px;
+}
+
+.def-section__video {
+  width: 100%;
+  height: auto;
 }
