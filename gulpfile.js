@@ -13,18 +13,21 @@ const paths = {
   entry: {
     pug: "./src/views/*.pug",
     scss: "./src/styles/*.scss",
+    js: "./src/js/*.js",
     img: "./src/img/**/*",
     fonts: "./src/fonts/**/*"
   },
   src: {
     pug: ["./src/views/**/*.pug", "./src/blocks/**/*.pug"],
     scss: ["./src/styles/**/*.scss", "./src/blocks/**/*.scss"],
+    js: ["./src/js/**/*"],
     img: ["./src/img/**/*.*"],
     fonts: ["./src/fonts/**/*"]
   },
   output: {
     pug: "./dist/",
     scss: "./dist/css/",
+    js: "./dist/js/",
     img: "./dist/",
     fonts: "./dist/"
   },
@@ -57,6 +60,14 @@ function scssComp() {
     .pipe(browserSync.stream());
 }
 
+/* JavaScript */
+function jsComp() {
+  return gulp
+    .src(paths.entry.js)
+    .pipe(gulp.dest(paths.output.js))
+    .pipe(browserSync.stream());
+}
+
 /* Minify and copy images to dist */
 function img() {
   return gulp
@@ -84,6 +95,7 @@ function watchers(done) {
   gulp.watch(paths.src.pug, gulp.series(pugComp));
   gulp.watch(paths.src.scss, gulp.series(scssComp));
   gulp.watch(paths.src.img, gulp.series(img));
+  gulp.watch(paths.src.js, gulp.series(jsComp));
   done();
 }
 
@@ -101,7 +113,7 @@ function browserSyncInit(done) {
 /* Tasks */
 const build = gulp.series(
   cleanBuild,
-  gulp.parallel(pugComp, scssComp, img, fonts)
+  gulp.parallel(pugComp, scssComp, jsComp, img, fonts)
 );
 const watch = gulp.series(build, browserSyncInit, watchers);
 
