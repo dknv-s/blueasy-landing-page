@@ -1,6 +1,25 @@
-.nav {
+.nav {}
+
+.nav-list {
   font-size: 0;
   margin-right: -21px;
+  @include md(display, none);
+}
+
+.nav-list--open {
+  padding-top: 40px;
+  display: block;
+
+  .nav__item {
+    display: block;
+    text-align: right;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav__link {
+    text-align: center;
+  }
 }
 
 .nav__item {
@@ -23,7 +42,6 @@
   opacity: 0.9;
   padding: 6px 17px;
   border: 2px solid transparent;
-  // box-sizing: border-box;
 }
 
 .nav__link--active {

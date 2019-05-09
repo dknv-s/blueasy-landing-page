@@ -2,6 +2,7 @@
   background-color: #353f46;
   opacity: 0.85;
   padding: 54px 0;
+  position: relative;
 }
 
 .header__wrapper {
@@ -20,4 +21,16 @@
 
 .header__navbar {
   float: right;
+  @include md(float, none);
+}
+
+.header__menu-btn {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 30px;
+  float: right;
+  font-size: 24px;
+  color: #fff;
+  @include md(display, block);
 }
