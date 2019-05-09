@@ -1,3 +1,10 @@
 .page-header {
   background: url(../img/hero_bg.png) center center/cover no-repeat;
+  padding-top: 150px;
+}
+
+.page-header__header {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
