@@ -9,12 +9,15 @@
 .contact-form__input-col {
   @include col();
   @include size(5);
+  @include size-md(12);
 }
 
 .contact-form__address-col {
   @include col();
   @include size(5);
   @include shift-left(1);
+  @include size-md(12);
+  @include shift-md-left(0);
 }
 
 
@@ -59,7 +62,9 @@
 }
 
 .contact-form__submit {
-  width: 370px;
+  display: block;
+  width: 100%;
+  max-width: 370px;
   height: 60px;
   line-height: 60px;
   text-align: center;
@@ -72,4 +77,6 @@
   border: none;
   margin-top: 32px;
   cursor: pointer;
+  @include md(margin-left, auto);
+  @include md(margin-right, auto);
 }
