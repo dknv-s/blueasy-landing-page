@@ -1,0 +1,12 @@
+mixin nav-list(className, items)
+  ul.nav-list(class=className)
+    each item in items
+      li.nav-list__item
+        a.nav-list__link(href="#")= item
+
+.footer
+  .container
+    .footer__wrapper
+      .footer__nav
+        +nav-list('nav-list--footer', ['Home', 'Services', 'Portfolio', 'Contact'])
+      p.footer__copy 2013 ©

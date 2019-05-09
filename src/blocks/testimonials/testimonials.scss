@@ -1,0 +1,38 @@
+.testimonials {
+  padding: 70px 0 76px;
+}
+
+.testimonials__wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '"';
+    color: #515f67;
+    font-family: Bitter;
+    font-size: 72px;
+    font-weight: 700;
+  }
+}
+
+.testimonials__title {}
+
+.testimonials__text {
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-top: 25px;
+}
+
+.testimonials__author {
+  color: #4bcaff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 25px;
+}

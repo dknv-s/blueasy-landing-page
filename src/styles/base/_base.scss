@@ -1,0 +1,41 @@
+.container {
+  @include wrapper();
+}
+
+.section-title {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 3px;
+  }
+}
+
+.section-title--black {
+  color: #515f67;
+
+  &::after {
+    background-color: #515f67;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: #353f46;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 39px;
+  border: 2px solid #353f46;
+  line-height: 0.8;
+}

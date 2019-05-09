@@ -1,0 +1,31 @@
+.portfolio {
+  padding: 68px 0 80px;
+}
+
+.portfolio__titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.portfolio__title {}
+
+.portfolio__filter {}
+
+.portfolio__grid {
+  @include row-flex();
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.portfolio__item {
+  @include col();
+  @include size(3);
+  width: 270px;
+  height: 270px;
+  background-color: #000;
+  margin-top: 30px;
+}
+
+.portfolio__img {}

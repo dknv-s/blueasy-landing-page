@@ -1,0 +1,22 @@
+.header {
+  background-color: #353f46;
+  opacity: 0.85;
+}
+
+.header__wrapper {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__navbar {}

@@ -1,0 +1,21 @@
+.hero {}
+
+.hero__content {
+  padding: 240px 0 255px;
+}
+
+.hero__title {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 78px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__title-line {
+  background-color: #353f46;
+  opacity: 0.85;
+  padding: 10px 15px;
+}

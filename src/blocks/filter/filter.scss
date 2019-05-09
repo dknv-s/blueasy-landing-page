@@ -1,0 +1,31 @@
+.filter {
+  font-size: 0;
+  margin-right: -21px;
+}
+
+.filter__item {
+  display: inline-block;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filter__link {
+  display: inline-block;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  color: #515f67;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.9;
+  padding: 4px 17px;
+  border: 2px solid transparent;
+  // box-sizing: border-box;
+}
+
+.filter__link--active {
+  border: 2px solid #4bcaff;
+}

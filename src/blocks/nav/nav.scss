@@ -1,0 +1,31 @@
+.nav {
+  font-size: 0;
+  margin-right: -21px;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  display: inline-block;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.9;
+  padding: 6px 17px;
+  border: 2px solid transparent;
+  // box-sizing: border-box;
+}
+
+.nav__link--active {
+  border: 2px solid #4bcaff;
+}

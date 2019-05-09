@@ -1,0 +1,47 @@
+// Bitter 700
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Bitter Bold'),
+    local('Bitter-Bold'),
+    url(../fonts/bitter/bitter-bold.ttf) format('truetype');
+}
+
+// Segoe UI 300, 400, 600, 700
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Segoe UI Light'),
+    url(../fonts/segoe-ui/segoe-ui-300.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Segoe UI Regular'),
+    url(../fonts/segoe-ui/segoe-ui-400.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Segoe UI Semibold'),
+    url(../fonts/segoe-ui/segoe-ui-600.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Segoe UI Bold'),
+    url(../fonts/segoe-ui/segoe-ui-700.ttf) format('truetype');
+}

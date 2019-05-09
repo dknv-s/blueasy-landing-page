@@ -1,0 +1,66 @@
+.features {
+  background-color: #4bcaff;
+  padding: 69px 0 77px;
+}
+
+.features__title {}
+
+.features__grid {
+  @include row-flex();
+  @include sm(text-align, center);
+}
+
+.features__item {
+  @include col();
+  @include size(3);
+  @include size-lg(6);
+  @include size-sm(12);
+  margin-top: 38px;
+}
+
+.features__icon {
+  display: inline-block;
+}
+
+.features__icon--coffee {
+  width: 34px;
+  height: 48px;
+  background: url(../img/coffee.png) center/contain no-repeat;
+}
+
+.features__icon--instant {
+  width: 48px;
+  height: 48px;
+  background: url(../img/instant.png) center/contain no-repeat;
+}
+
+.features__icon--dslr {
+  width: 47px;
+  height: 48px;
+  background: url(../img/dslr.png) center/contain no-repeat;
+}
+
+.features__icon--frame {
+  width: 48px;
+  height: 48px;
+  background: url(../img/frame.png) center/contain no-repeat;
+}
+
+.features__subtitle {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.features__text {
+  margin-top: 12px;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}

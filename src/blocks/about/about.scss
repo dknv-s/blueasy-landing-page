@@ -1,0 +1,29 @@
+.about {
+  background: url(../img/about_bg.png) center/cover no-repeat;
+  padding: 90px 0 158px;
+}
+
+.about__title {}
+
+.about__grid {
+  @include row-flex();
+}
+
+.about__col {
+  @include col();
+  @include size(6);
+  @include size-md(12);
+}
+
+.about__text {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 34px;
+}
+
+.about__socials {
+  margin-top: 34px;
+}

@@ -1,0 +1,24 @@
+/* Mixins */
+@import "./libs/smart-grid.scss";
+/* Base styles */
+@import "./base/_fonts.scss";
+@import "./base/_base.scss";
+
+@include reset();
+
+/* Components */
+@import "../blocks/hero/hero.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/nav/nav.scss";
+@import "../blocks/page-header/page-header.scss";
+@import "../blocks/features/features.scss";
+@import "../blocks/portfolio/portfolio.scss";
+@import "../blocks/filter/filter.scss";
+@import "../blocks/def-section/def-section.scss";
+@import "../blocks/twitter-section/twitter-section.scss";
+@import "../blocks/about/about.scss";
+@import "../blocks/socials/socials.scss";
+@import "../blocks/testimonials/testimonials.scss";
+@import "../blocks/contact/contact.scss";
+@import "../blocks/contact-form/contact-form.scss";
+@import "../blocks/footer/footer.scss";
