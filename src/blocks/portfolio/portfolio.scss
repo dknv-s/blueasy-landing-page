@@ -8,11 +8,15 @@
 
 .portfolio__title {
   float: left;
+  @include md(float, none);
 }
 
 .portfolio__filter {
   margin-top: 15px;
   float: right;
+  text-align: center;
+  @include md(float, none);
+  @include md(margin-top, 30px);
 }
 
 .portfolio__grid {
