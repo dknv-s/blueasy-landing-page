@@ -22,6 +22,11 @@
   opacity: 0.9;
   padding: 4px 17px;
   border: 2px solid transparent;
+
+  &:hover {
+    background-color: #4bcaff;
+    color: #fff;
+  }
 }
 
 .filter__link--active {

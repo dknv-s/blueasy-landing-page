@@ -41,6 +41,10 @@
   opacity: 0.9;
   padding: 6px 17px;
   border: 2px solid transparent;
+
+  &:hover {
+    background-color: #4bcaff;
+  }
 }
 
 .nav__link--active {
